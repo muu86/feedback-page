@@ -20,15 +20,16 @@ export default function App() {
         screenOptions={{
           headerStyle: {
             // backgroundColor: '#f4511e',
-            shadowOpacity: 0,
-            elevation: 0,
+            shadowOpacity: 10,
+            height: 70,
+            // elevation: 0,
           },
           headerTitleStyle: {
             fontWeight: 'bold',
           }
         }}
       >
-        <VideoStack.Screen name="PickVideo" component={PickVideoScreen} options={{ title: '비디오 선택'}} />
+        {/* <VideoStack.Screen name="PickVideo" component={PickVideoScreen} options={{ title: '비디오 선택'}} /> */}
         <VideoStack.Screen name="Feedback" component={FeedbackScreen} options={{ title: '분석 결과'}} />
       </VideoStack.Navigator>
     </NavigationContainer>
